@@ -1,0 +1,91 @@
+body {
+  font-family: Inter, system-ui, "Segoe UI", Roboto, Arial;
+  background: #121212;
+  color: #e6e6e6;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 15px 30px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1db954; 
+}
+
+main {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #181818;
+  padding: 20px;
+  height: 100vh;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar ul li button {
+  width: 100%;
+  background-color: #181818;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 15px;
+  text-align: left;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.sidebar ul li button:hover {
+  background-color: #282828;
+  color: #1db954;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+}
+
+.playlists {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.playlist {
+  background-color: #181818;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.playlist:hover {
+  background-color: #282828;
+  transform: scale(1.05);
+}
+
+.playlist img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.playlist p {
+  font-size: 14px;
+  color: #e6e6e6;
+}
